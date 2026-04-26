@@ -16,12 +16,14 @@ namespace AH2721
         // Update is called once per frame
         void Update()
         {
+            //Removes object that goes past players view
             if (transform.position.z > topBound)
             {
                 Destroy(gameObject);
             }
             else if (transform.position.z < lowerBound)
             {
+                Debug.Log("Game over!");
                 Destroy(gameObject);
             }
         }

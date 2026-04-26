@@ -564,6 +564,8 @@ GameObject:
   - component: {fileID: 7218824561916250355}
   - component: {fileID: 7981054255011171295}
   - component: {fileID: 2067728419857756710}
+  - component: {fileID: 6894087580271944087}
+  - component: {fileID: 3857925681823401073}
   m_Layer: 0
   m_Name: Animal_Stag_01
   m_TagString: Untagged
@@ -630,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f17060819640145a1869fe71d21f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AH2721.MoveForward
-  speed: 10
+  speed: 6
 --- !u!114 &2067728419857756710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +645,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b86285c7ad5b04ab678c7d88b319bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AH2721.DestroyOutOfBounds
+--- !u!65 &6894087580271944087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628643470783382061}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.23540519, y: 0.59857273, z: 0.48711258}
+  m_Center: {x: -0.003387175, y: 0.20071468, z: 0.03828777}
+--- !u!114 &3857925681823401073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628643470783382061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54b4e1ef7e2ddd419b66360f9dd5caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &4387220052438740326
 GameObject:
   m_ObjectHideFlags: 0
